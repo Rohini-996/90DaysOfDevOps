@@ -1,8 +1,8 @@
-. Today is Day 03 of #90DaysOfDevOpsChallenge 
+Today is Day 03 of #90DaysOfDevOpsChallenge 
 
-. Today's task is about popular linux commands which we used in production enviornment 
+Today's task is about popular linux commands which we used in production enviornment 
 1. Process Management Commands
-
+- Command Usage
 ```
 ps              = Show running processes
 ps aux          = Show all running processes
