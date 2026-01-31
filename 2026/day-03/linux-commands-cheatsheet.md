@@ -2,23 +2,24 @@ Today is Day 03 of #90DaysOfDevOpsChallenge
 
 Today's task is about popular linux commands which we used in production enviornment 
 
-1. Process Management Commands
-. Command	Usage
-- ps             = Show running processes
-- ps aux	       = Show all running processes
-- top	           = Real-time process monitoring
-- htop	         = Enhanced process viewer
-- pidof          = process	Get process ID
-- kill PID	     = Kill process by PID
-- kill -9 PID	   = Force kill process
-- pkill name     = Kill process by name
-- uptime	       = Show system running time
-- free -h	       = Show memory usage
-- watch command	 = Run command repeatedly
+| Command        | Usage |
+|---------------|------|
+| ps            | Show running processes |
+| ps aux        | Show all running processes |
+| top           | Real-time process monitoring |
+| htop          | Enhanced process viewer |
+| pidof process | Get process ID |
+| kill PID      | Kill process by PID |
+| kill -9 PID   | Force kill process |
+| pkill name    | Kill process by name |
+| uptime        | Show system running time |
+| free -h       | Show memory usage |
+| watch command | Run command repeatedly |
+
 
 
 2. 🗂️ File System Commands
-. Command	Usage
+- Command	Usage
 - ls	= List files and directories
 - ls -l	= List files and permissions of file
 - pwd	= Show current directory path
@@ -34,7 +35,7 @@ Today's task is about popular linux commands which we used in production enviorn
 - df -h	Show disk usage
 
 3. 🌐 Networking & Troubleshooting Commands
-. Command	Usage
+- Command	Usage
 - ping google.com	= Check network connectivity of google.com
 - ip addr	= Used to show IP addresses
 - ip route	= Show routing table
@@ -45,7 +46,7 @@ Today's task is about popular linux commands which we used in production enviorn
 - traceroute = Trace network path shows where failure happen
 
 4. 📄 File Viewing & Text Utilities
-. Command	Usage
+- Command	Usage
 - cat (file)	= View file content
 - less (file) = Scroll file content
 - head (file) -n 5 = View first 5 lines of file
@@ -55,10 +56,10 @@ Today's task is about popular linux commands which we used in production enviorn
 - grep word (file)	= Search text
 
 5. 🔐 Permissions & Ownership
-. Command	Usage
-. chmod 755 file	= Change permissions to +x rw and rw
-. chmod +x file	= Make file executable
-. chgrp = Change group 
-. chown = Change owner
+- Command Usage
+- chmod 755 file	= Change permissions to +x rw and rw
+- chmod +x file	= Make file executable
+- chgrp = Change group 
+- chown = Change owner
 
-. This cheatsheet commands is very useful in troubleshooting accessing files giving permissions & for process managment
+- This cheatsheet commands is very useful in troubleshooting accessing files giving permissions & for process managment
