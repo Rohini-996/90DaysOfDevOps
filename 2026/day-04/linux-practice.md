@@ -80,17 +80,16 @@ Step 2. Check nginx logs
 - tail -n 5 /var/log/nginx/error.log
 
 
-- Step 3: Test nginx configuration
+Step 3. Test nginx configuration
 - nginx -t
 
 
-- Step 4: Restart nginx service
+Step 4. Restart nginx service
 - sudo systemctl restart nginx
 
 
-- Step 5: Verify service is running
+Step 5. Verify service is running
 - systemctl status nginx
-
 
 - Result:
 - Configuration validated
