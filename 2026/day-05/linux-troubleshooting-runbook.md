@@ -8,7 +8,7 @@ how do you solve it.
 1. Target service / process
 
 - Service: nginx 
-. Why nginx?: Common production web server; CPU, memory, network, and logs are easy to correlate
+- Why nginx?: Common production web server; CPU, memory, network, and logs are easy to correlate
 
 2. Snapshot: CPU & Memory
 ```
@@ -62,6 +62,8 @@ Jan 19 08:14:42 LAPTOP-6F2K1CME systemd[1]: Started nginx.service - A high perfo
 Jan 19 10:03:48 LAPTOP-6F2K1CME systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy >
 Jan 19 10:04:00 LAPTOP-6F2K1CME systemd[1]: Started nginx.service - A high performance web server and a reverse proxy s>
 ```
+. Started nginx Successfully 
+
 5. Quick findings
  - You just have to see whether port 80 is already allocated or not
 
