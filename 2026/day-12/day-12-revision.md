@@ -1,7 +1,7 @@
 Today is Day 12 of #90DaysOfDevOpsChallenge
 
-- Today was a breather + revision day 
-- Instead of learning something new, I focused on revising and reinforcing everything from Days 01–11 so the fundamentals stay strong.
+- Today is a revision of Day 01-11
+- Instead of learning something new, I focused on revising everything from Days 01–11 so the fundamentals stay strong.
 
 - This day was all about confidence, and clarity, just like real DevOps learning should be.
 
