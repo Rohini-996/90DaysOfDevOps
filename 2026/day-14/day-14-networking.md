@@ -1,15 +1,15 @@
 ## Today I practiced core networking concepts and real troubleshooting commands.
 ## Mini Task: Port Probe & Interpret
 
-1. Listening Port Identified:
-Answer: SSH is listening on port 22 (ss -tulpn shows sshd on 0.0.0.0:22)
+1. Listening Port Identified
+- SSH is listening on port 22 (ss -tulpn shows sshd on 0.0.0.0:22)
 
-2. Test from Same Machine:
-Answer: - nc -zv localhost 22
+2. Test from Same Machine
+- - nc -zv localhost 22
 
-3. One-Line Conclusion:
-Answer:  Port 22 is reachable, SSH service is running properly.
-      : If it was not reachable, next check: systemctl status ssh and firewall rules (sudo ufw status or iptables -L).
+3. One-Line Conclusion
+- Port 22 is reachable, SSH service is running properly.
+-  If it was not reachable, next check: systemctl status ssh and firewall rules (sudo ufw status or iptables -L).
 
 ## Networking Commands 
 ```
