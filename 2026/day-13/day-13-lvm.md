@@ -3,13 +3,14 @@
 ## Task 1: Check Current Storage
 - First, I checked the existing disk structure to understand available devices.
 - lsblk 
- <img width="965" height="366" alt="Task 1" src="https://github.com/user-attachments/assets/d6075708-4e48-4e02-b7ea-96806e28c8f4" />
+ <img width="700" height="300" alt="Task 1" src="https://github.com/user-attachments/assets/d6075708-4e48-4e02-b7ea-96806e28c8f4" />
  
 ## Task 2: Create Physical Volume
 - Next, I converted the raw disks into Physical Volumes so that LVM can manage them.
-- pvcreate /dev/nvme1n1 /dev/nvme2n1
-- pvs
-
+ ```
+  pvcreate /dev/nvme1n1 /dev/nvme2n1
+  pvs
+```
 <img width="702" height="162" alt="Task 2" src="https://github.com/user-attachments/assets/c408d82a-5799-4e75-a350-ee244f397b87" />
 
 ## Task 3: Create Volume Group
