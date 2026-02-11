@@ -2,10 +2,11 @@
 # Today's task is about LVM
 
 # Task 1: Check Current Storage
- ```
+ 
  lsblk 
  <img width="965" height="366" alt="Task 1" src="https://github.com/user-attachments/assets/d6075708-4e48-4e02-b7ea-96806e28c8f4" />
-```
+<img width="1335" height="106" alt="Task 6" src="https://github.com/user-attachments/assets/8a7a33ee-1fc6-402c-956e-ca0831b9f5f8" />
+
 # Task 2: Create Physical Volume
 ```
 pvcreate /dev/nvme1n1 /dev/nvme2n1
