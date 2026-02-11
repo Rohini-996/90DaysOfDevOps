@@ -11,7 +11,7 @@
   pvcreate /dev/nvme1n1 /dev/nvme2n1
   pvs
 ```
-<img width="702" height="162" alt="Task 2" src="https://github.com/user-attachments/assets/c408d82a-5799-4e75-a350-ee244f397b87" />
+<img width="500" height="115" alt="Task 2" src="https://github.com/user-attachments/assets/c408d82a-5799-4e75-a350-ee244f397b87" />
 
 ## Task 3: Create Volume Group
 - After creating physical volumes, I combined them into a single Volume Group.
@@ -19,7 +19,7 @@
 vgcreate tws_vg /dev/nvme1n1 /dev/nvme2n1
 vgs
 ```
-<img width="622" height="116" alt="Task 3" src="https://github.com/user-attachments/assets/6ae73c75-4450-40a9-98ab-2dbb3456a617" />
+<img width="500" height="100" alt="Task 3" src="https://github.com/user-attachments/assets/6ae73c75-4450-40a9-98ab-2dbb3456a617" />
 
 - Task 4: Create Logical Volume
 - Now that volume group is ready, I created a Logical Volume from it.
@@ -27,7 +27,7 @@ vgs
 lvcreate -L 500M -n tws_lv tws_vg
 lvs
 ```
-<img width="1102" height="115" alt="Task 4" src="https://github.com/user-attachments/assets/fbf7a4d3-132c-490f-b596-301c38405835" />
+<img width="900" height="115" alt="Task 4" src="https://github.com/user-attachments/assets/fbf7a4d3-132c-490f-b596-301c38405835" />
 
 - Task 5: Format and Mount
 - After creating the logical volume, I formatted it with a filesystem and mounted it to make it usable.
@@ -37,7 +37,7 @@ lvs
  mount /dev/tws_vg/tws_lv /mnt/tws_lv_mount
  df -h /mnt/tws_lv_mount/
 ```
- <img width="913" height="102" alt="Task 5" src="https://github.com/user-attachments/assets/5b9838ec-c405-4c21-8551-3c2dfd453e2a" />
+ <img width="800" height="90" alt="Task 5" src="https://github.com/user-attachments/assets/5b9838ec-c405-4c21-8551-3c2dfd453e2a" />
 
 - Task 6: Extend the Volume
 - Next, I extend the volume using lvextend
@@ -46,7 +46,7 @@ lvs
 ```
  lvextend -L +200M /dev/tws_vg/tws_lv
 ```
- <img width="1335" height="106" alt="Task 6" src="https://github.com/user-attachments/assets/65762364-37a2-42ec-9c76-13a0bcba8a6f" />
+ <img width="1100" height="100" alt="Task 6" src="https://github.com/user-attachments/assets/65762364-37a2-42ec-9c76-13a0bcba8a6f" />
 
 🔹 What I Learned Today
 1. I understood how LVM organizes storage step by step, from Physical Volume (PV) to Volume Group (VG) to Logical Volume (LV).
