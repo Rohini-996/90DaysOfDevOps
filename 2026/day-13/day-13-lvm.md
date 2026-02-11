@@ -21,7 +21,7 @@ vgs
 ```
 <img width="500" height="80" alt="Task 3" src="https://github.com/user-attachments/assets/6ae73c75-4450-40a9-98ab-2dbb3456a617" />
 
-- Task 4: Create Logical Volume
+## Task 4: Create Logical Volume
 - Now that volume group is ready, I created a Logical Volume from it.
 ```
 lvcreate -L 500M -n tws_lv tws_vg
@@ -29,7 +29,7 @@ lvs
 ```
 <img width="900" height="90" alt="Task 4" src="https://github.com/user-attachments/assets/fbf7a4d3-132c-490f-b596-301c38405835" />
 
-- Task 5: Format and Mount
+## Task 5: Format and Mount
 - After creating the logical volume, I formatted it with a filesystem and mounted it to make it usable.
 ```
  mkdir /mnt/tws_lv_mount
@@ -39,7 +39,7 @@ lvs
 ```
  <img width="500" height="80" alt="Task 5" src="https://github.com/user-attachments/assets/5b9838ec-c405-4c21-8551-3c2dfd453e2a" />
 
-- Task 6: Extend the Volume
+## Task 6: Extend the Volume
 - Next, I extend the volume using lvextend
 - One of the biggest advantages of LVM is the ability to extend storage easily.
 - This command increased the size of the logical volume by 200MB without deleting or recreating it.
