@@ -18,7 +18,6 @@ Create variables.sh with:
 A variable for your NAME
 A variable for your ROLE (e.g., "DevOps Engineer")
 Print: Hello, I am <NAME> and I am a <ROLE>
-Try using single quotes vs double quotes — what's the difference?
 ```
 <img width="560" height="90" alt="Task 2 sh" src="https://github.com/user-attachments/assets/5ec67afc-be2b-4952-86f5-a92dd1228d44" />
 
@@ -52,11 +51,4 @@ If n — prints "Skipped."
 ```
 
 <img width="1000" height="430" alt="Task 5 0sh " src="https://github.com/user-attachments/assets/e23c3bfd-8509-4ecb-9bec-45e51b970a9a" />
-
-
-
-
-
-
-
 
