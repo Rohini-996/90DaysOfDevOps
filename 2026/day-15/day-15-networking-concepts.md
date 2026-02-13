@@ -1,4 +1,4 @@
-### Day 15 – Networking Concepts: DNS, IP, Subnets & Ports
+## Day 15 – Networking Concepts: DNS, IP, Subnets & Ports
 
 ## Tasks
 
@@ -38,14 +38,9 @@ A, AAAA, CNAME, MX, NS
 ## Task 3 
 
 ```
-# 🌐 Task 3: CIDR & Subnetting
-
-## ✅ What does `/24` mean in `192.168.1.0/24`?
-
 1. What does /24 mean in 192.168.1.0/24?
 --> `/24` means 24 bits are used for the network portion of the IP address.  
      The remaining 8 bits are for host addresses.
----
 
 2. Explain in your own words: why do we subnet?
 Subnetting is used to:
@@ -56,9 +51,8 @@ Subnetting is used to:
 - Make network management easier
 In simple words:  
 Subnetting helps organize and control network communication better.
-```
-```
-4. Quick exercise — fill in
+
+3. Quick exercise — fill in
     CIDR Quick Reference Table
 
 | CIDR | Subnet Mask       | Total IPs | Usable Hosts |
