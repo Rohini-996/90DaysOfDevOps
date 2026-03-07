@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Day 18 – Shell Scripting: Functions & Slightly Advanced Concepts
+=======
+# Day 18 – Shell Scripting: Functions & intermediate Concepts
+>>>>>>> 4ca1d87cea6af1163b3225f67decdba57ec7ff58
 
 ## Task
 Write cleaner, reusable scripts — learn functions, strict mode, and real-world patterns.
@@ -7,7 +11,11 @@ You will:
 - Write and call **functions**
 - Use **`set -euo pipefail`** for safer scripts
 - Work with **return values** and **local variables**
+<<<<<<< HEAD
 - Build a slightly advanced script
+=======
+- Build an intermediate script
+>>>>>>> 4ca1d87cea6af1163b3225f67decdba57ec7ff58
 
 ---
 
