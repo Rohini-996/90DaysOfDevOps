@@ -18,7 +18,7 @@ Quick reference for common **Bash shell scripting** commands and syntax.
 
 ---
 
-# 1. Basics
+## 1. Basics
 
 ### Shebang
 Defines which shell should execute the script.
@@ -33,12 +33,6 @@ Give execute permission and run the script.
 ```bash
 chmod +x script.sh
 ./script.sh
-```
-
-Or run using bash.
-
-```bash
-bash script.sh
 ```
 
 ### Comments
@@ -83,7 +77,7 @@ echo "First arg: $1"
 
 ---
 
-# 2. Operators and Conditionals
+## 2. Operators and Conditionals
 
 ### String Comparison
 Compares two text values.
@@ -146,7 +140,7 @@ esac
 
 ---
 
-# 3. Loops
+## 3. Loops
 
 ### For Loop
 Iterates through a list.
@@ -198,7 +192,7 @@ done
 
 ---
 
-# 4. Functions
+## 4. Functions
 
 ### Define Function
 Functions group reusable code.
@@ -231,7 +225,7 @@ local var="value"
 
 ---
 
-# 5. Text Processing
+## 5. Text Processing
 
 ### grep
 Search text patterns in files.
@@ -301,7 +295,7 @@ tail -n 5 file.txt
 
 ---
 
-# 6. Useful One-Liners
+## 6. Useful One-Liners
 
 Delete files older than 7 days.
 
@@ -335,7 +329,7 @@ tail -f app.log | grep ERROR
 
 ---
 
-# 7. Error Handling and Debugging
+## 7. Error Handling and Debugging
 
 ### Exit Code
 Shows status of last command.
@@ -369,13 +363,4 @@ set -u
 set -x
 ```
 
-### Trap
-Run command when script exits.
-
-```bash
-trap 'rm temp.txt' EXIT
-```
-
----
-
-**Day 21 – 90 Days of DevOps**
+## This Cheatsheet helps you while debugging  
