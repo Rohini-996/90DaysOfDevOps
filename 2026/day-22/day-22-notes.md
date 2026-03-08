@@ -1,13 +1,13 @@
-### Day 22 – Introduction to Git
+## Day 22 – Introduction to Git
 
 Today I started my Git journey. Git is the most important tool for version control in DevOps and software development.
 It helps track changes, collaborate with teams, and maintain project history.
 
 ---
 
-### 1. Install and Configure Git
+## 1. Install and Configure Git
 
-### Check if Git is installed
+## Check if Git is installed
 
 `git --version`  
 Shows the installed Git version.
@@ -19,7 +19,7 @@ git --version
 
 ---
 
-### Configure Git username
+## Configure Git username
 
 `git config --global user.name "Your Name"`  
 Sets your Git username.
@@ -30,7 +30,7 @@ git config --global user.name "Rohini"
 
 ---
 
-### Configure Git email
+## Configure Git email
 
 `git config --global user.email "you@gmail.com"`  
 Sets your Git email.
@@ -41,7 +41,7 @@ git config --global user.email "rohini@gmail.com"
 
 ---
 
-### Verify configuration
+## Verify configuration
 
 `git config --list`  
 Displays all Git configuration settings.
@@ -52,7 +52,7 @@ git config --list
 
 ---
 
-# 2. Create Your Git Project
+## 2. Create Your Git Project
 
 ### Create project folder
 
@@ -97,7 +97,7 @@ ls -a
 
 ---
 
-# 3. Git Commands Reference
+## 3. Git Commands Reference
 
 ## Setup & Configuration
 
@@ -135,7 +135,7 @@ git log --oneline
 
 ---
 
-# 4. Stage and Commit Example
+## 4. Stage and Commit Example
 
 Stage file:
 
@@ -157,7 +157,7 @@ git log --oneline
 
 ---
 
-# 5. Git Workflow
+## 5. Git Workflow
 
 Git workflow has three main stages:
 
@@ -173,7 +173,7 @@ edit file → git add → git commit
 
 ---
 
-# 6. Understand the Git Workflow
+## 6. Understand the Git Workflow
 
 ### What is the difference between `git add` and `git commit`?
 
@@ -208,7 +208,7 @@ Repository → where committed changes are permanently stored.
 
 ---
 
-# 7. Example Commit History
+## 7. Example Commit History
 
 Example output of:
 
@@ -224,7 +224,7 @@ a3f4c21 Update git commands
 
 ---
 
-# Day 22 Summary
+### Day 22 Summary
 
 Today I learned:
 
