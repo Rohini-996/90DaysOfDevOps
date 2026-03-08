@@ -1,11 +1,11 @@
-# Day 22 – Introduction to Git
+### Day 22 – Introduction to Git
 
 Today I started my Git journey. Git is the most important tool for version control in DevOps and software development.
 It helps track changes, collaborate with teams, and maintain project history.
 
 ---
 
-# 1. Install and Configure Git
+### 1. Install and Configure Git
 
 ### Check if Git is installed
 
