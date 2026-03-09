@@ -257,5 +257,3 @@ Today I learned:
 Git branching makes it easy to work on **features without breaking the main code**.
 
 ---
-
-# 90 Days of DevOps – Day 23
