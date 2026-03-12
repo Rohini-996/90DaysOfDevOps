@@ -1,4 +1,4 @@
-## Day 40 – My First GitHub Actions Workflow 🚀
+## Day 40 - My First GitHub Actions Workflow 
 
 Today I created my first GitHub Actions workflow and watched my pipeline run in the cloud.
 This was the moment where CI/CD became real for me instead of just theory.
@@ -58,7 +58,7 @@ name: (on a step) Gives a readable name to a step or workflow.
 ```
 
 ```
-ask 4: Add More Steps
+Task 4: Add More Steps
 Create cicd.yml to also:
  1. checkout code
  2. Build code
@@ -99,7 +99,36 @@ jobs:
         run: docker --version & python3 --version
 ```
 <img width="800" height="300" alt="Screenshot 2026-03-12 105552" src="https://github.com/user-attachments/assets/3d6497e0-fb85-424b-855c-1d2c7515db4c" />
-
 ```
 
-  
+``
+Task 5: Break It On Purpose
+Add a step that runs a command that will fail (e.g., exit 1 or a misspelled command)
+Push and observe what happens in the Actions tab
+Fix it and push again
+
+code:
+
+  Build:
+    needs: [Code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build code
+        run: echo "code Build ho gaya"
+      - name: Break pipeline intentionally
+        run: exit 1
+Question: What does a failed pipeline look like? How do you read the error?
+Answer: The failed job shows a red mark in the Actions tab. The pipeline stops at the step where the error occurred.
+
+```
+<img width="800" height="300" alt="Screenshot 2026-03-12 105957" src="https://github.com/user-attachments/assets/aa862b2f-c2bd-42ef-b111-da4eedf6d035" />
+
+### Today I learned how to:
+
+- Create GitHub Actions workflows
+- Trigger workflows on push
+- Run commands inside GitHub runners
+- Understand workflow structure
+- Debug pipeline failures
+- Build a simple CI/CD pipeline
+
