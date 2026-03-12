@@ -99,9 +99,8 @@ jobs:
         run: docker --version & python3 --version
 ```
 <img width="800" height="300" alt="Screenshot 2026-03-12 105552" src="https://github.com/user-attachments/assets/3d6497e0-fb85-424b-855c-1d2c7515db4c" />
-```
 
-``
+```
 Task 5: Break It On Purpose
 Add a step that runs a command that will fail (e.g., exit 1 or a misspelled command)
 Push and observe what happens in the Actions tab
