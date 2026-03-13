@@ -1,9 +1,10 @@
-# Day 41 – Triggers & Matrix Builds 🚀
+### Day 41 – Triggers & Matrix Builds 🚀
 
-### Today I explored different ways to trigger GitHub Actions workflows and learned how to run jobs across multiple environments using Matrix Builds.
-### These features are part of GitHub Actions, which allows automation of CI/CD pipelines.
+Today I explored different ways to trigger GitHub Actions workflows and learned how to run jobs across multiple environments using Matrix Builds.
 
-### Also I have added all this in my Github-Actions Repo
+These features are part of GitHub Actions, which allows automation of CI/CD pipelines.
+
+Also I have added all this in my Github-Actions Repo
 
 ```
 Task 1: Trigger on Pull Request
