@@ -1,4 +1,4 @@
-### Day 41 – Triggers & Matrix Builds 🚀
+## Day 41 – Triggers & Matrix Builds 🚀
 
 Today I explored different ways to trigger GitHub Actions workflows and learned how to run jobs across multiple environments using Matrix Builds.
 
