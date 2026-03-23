@@ -19,13 +19,13 @@ I created a workflow with 3 parallel jobs:
 * `windows-latest`
 * `macos-latest`
 
-### 🔧 What each job prints:
+### What each job prints:
 
 * OS name
 * Hostname
 * Current user
 
-### 💡 Key Learning
+### Key Learning
 
 👉 A **GitHub-hosted runner** is a virtual machine provided and managed by GitHub.
 👉 It automatically spins up, runs the job, and shuts down.
@@ -41,7 +41,7 @@ On `ubuntu-latest`, I checked:
 * Node version
 * Git version
 
-### 💡 Why this matters?
+### Why this matters?
 
 * No need to install tools manually
 * Saves time 
@@ -111,7 +111,7 @@ Updated workflow:
 runs-on: [self-hosted, my-linux-runner]
 ```
 
-### 💡 Why Labels Are Useful?
+### Why Labels Are Useful?
 
 * Target specific machines
 * Separate environments (dev/staging/prod)
@@ -135,13 +135,14 @@ runs-on: [self-hosted, my-linux-runner]
 
 ## 📸 Screenshots
 
-### 🟢 Self-Hosted Runner (Idle)
+### 🟢 Job Running on Self-Hosted Runner
 
-*(Add your screenshot here)*
+<img width="900" height="400" alt="Screenshot 2026-03-23 124308" src="https://github.com/user-attachments/assets/faae6f85-f24f-423e-b337-563a4e090b9c" />
 
-### ⚙️ Job Running on Self-Hosted Runner
+### ⚙️ Job Running on Github Runner
 
-*(Add your screenshot here)*
+<img width="950" height="500" alt="github-runner" src="https://github.com/user-attachments/assets/9c7feb66-dbdf-485e-bbca-33728a6306c4" />
+
 
 ---
 
@@ -154,10 +155,3 @@ runs-on: [self-hosted, my-linux-runner]
 
 ---
 
-## 🔥 DevOps Insight
-
-> Self-hosted runners are widely used in companies to run secure, customized, and resource-heavy workloads on private infrastructure.
-
----
-
-✨ Day 42 completed!
