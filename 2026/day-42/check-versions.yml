@@ -1,0 +1,28 @@
+name: check-preinstalled-tools
+
+on:
+  workflow_dispath
+
+jobs:
+
+    check_versions:
+      runs-on: ubuntu-latest 
+      
+      steps:
+        - name: check version
+          run: |
+            echo: "Docker Version:"
+            docker --version
+
+            echo: "Git Version:"
+            git --version
+
+            echo: "python3 Version:"
+            python3 --version
+
+            echo: "Node Version:"
+            node --version 
+
+
+
+

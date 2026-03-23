@@ -1,0 +1,33 @@
+name: Multi OS Runner Demo
+
+on:
+  workflow_dispath
+
+jobs:
+
+  ubuntu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Details
+        run: |
+          echo "OS: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"
+
+  windows-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print Details
+        run: |
+          echo OS: %OS%
+          hostname
+          whoami
+
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - name: Print Details
+        run: |
+          echo "OS: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"
