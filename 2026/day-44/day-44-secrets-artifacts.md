@@ -53,7 +53,7 @@ jobs:
 
 ---
 
-## 🔑 Task 2: Using Secrets as Environment Variables
+## Task 2: Using Secrets as Environment Variables
 
 * Passed secrets as environment variables
 * Used them in commands without hardcoding
@@ -91,7 +91,7 @@ jobs:
           echo "Username is set: ${DOCKER_USER:+true}"
           echo "Token is set: ${DOCKER_TOKEN:+true}"
 ```
-## 📦 Task 3: Upload Artifacts
+## Task 3: Upload Artifacts
 
 * Generated a file (log/report)
 * Uploaded using:
@@ -129,12 +129,12 @@ jobs:
           path: report.txt
 ```
 
-## 🔄 Task 4: Share Artifacts Between Jobs
+## Task 4: Share Artifacts Between Jobs
 
 * Job 1 → Created & uploaded file
 * Job 2 → Downloaded & used it
 
-### 💡 Real Use Case
+### Real Use Case
 
 * Share build outputs between stages
 * Example: build → test → deploy pipeline
@@ -176,7 +176,7 @@ jobs:
       - name: read file
         run: cat msg.txt
 ```
-## 🧪 Task 5: Run Real Tests in CI
+##  Task 5: Run Real Tests in CI
 
 * Added a script (Python/Shell)
 * Workflow:
@@ -213,7 +213,7 @@ jobs:
       - name: Run script
         run: python test_script.py
 ```
-## ⚡ Task 6: Caching
+## Task 6: Caching
 
 * Used:
 
@@ -221,11 +221,11 @@ jobs:
 uses: actions/cache@v4
 ```
 
-### 💡 What I Learned
+### What I Learned
 
 * Dependencies are cached
 * Stored on GitHub runners
-* Second run is much faster 🚀
+* Second run is much faster 
 
 ---
 ```
@@ -257,7 +257,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 ```
-## 📚 Key Learnings
+## Key Learnings
 
 * Secrets must **never be exposed**
 * Artifacts help **store & share files across jobs**
@@ -266,7 +266,7 @@ jobs:
 
 ---
 
-## 🎯 Final Result
+## Final Result
 
 ✅ Secure pipeline
 ✅ Artifacts working
@@ -274,5 +274,3 @@ jobs:
 ✅ Faster builds with caching
 
 ---
-
-# #90DaysOfDevOpsChallenge 💻🔥
