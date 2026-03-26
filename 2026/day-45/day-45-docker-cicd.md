@@ -22,7 +22,8 @@ just like real production workflows.
 📂 `.github/workflows/docker-publish.yml`
 
 ```yaml
-name: Docker Build & Push
+
+name: Build and Push Docker Image
 
 on:
   push:
@@ -31,33 +32,31 @@ on:
       - feature/*
 
 jobs:
-  docker:
-    runs-on: ubuntu-latest
+  build-and-push:
+    runs-on: ubuntu-latest 
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code 
         uses: actions/checkout@v4
 
-      - name: Extract Short SHA
+      - name: Set short SHA
         run: echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
 
-      - name: Build Docker Image
-        run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:latest .
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-app:sha-${{ env.SHORT_SHA }} .
-
-      - name: Login to Docker Hub
+      - name: Login to Docker Hub 
         if: github.ref == 'refs/heads/main'
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          username: ${{ vars.DOCKERHUB_USER_AGAIN }}
+          password: ${{ secrets.DOCKERHUB_TOKEN_AGAIN }}
 
-      - name: Push Image
-        if: github.ref == 'refs/heads/main'
-        run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:sha-${{ env.SHORT_SHA }}
+      - name: Build & Push to Docker Hub
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: ${{ github.ref == 'refs/heads/main' }}
+          tags: |
+            ${{ vars.DOCKERHUB_USER_AGAIN }}/github-actions-app:latest
+            ${{ vars.DOCKERHUB_USER_AGAIN }}/github-actions-app:${{ env.SHORT_SHA }}
 ```
 
 ---
