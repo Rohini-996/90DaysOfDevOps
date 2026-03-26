@@ -9,9 +9,9 @@ just like real production workflows.
 
 * Builds a Docker image on every push
 * Tags the image with:
+  
+   * `latest`
 
-  * `latest`
-  * `sha-<commit-id>`
 * Pushes the image to Docker Hub (only from `main` branch)
 * Shows build status using a badge
 
@@ -65,9 +65,6 @@ jobs:
 ## 🐳 Docker Image
 
 👉 docker push rohinidivekar123/myapp:latest
-
----
-
 
 ---
 
